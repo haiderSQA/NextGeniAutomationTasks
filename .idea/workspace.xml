@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3240c5dd-b92c-43b7-80ec-04af3e76e336" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Task2Api/payload.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Task2Api/postApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Task2Api/BookingTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Task2Api/Payload.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExtentReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/ExtentReport.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Task2Api/payload.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Task2Api/postApi.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="AnnotationType" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -48,6 +49,16 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.BookingTests (1).executor": "Run",
+    "TestNG.BookingTests (2).executor": "Run",
+    "TestNG.BookingTests (3).executor": "Run",
+    "TestNG.BookingTests.addBooking (1).executor": "Run",
+    "TestNG.BookingTests.addBooking (2).executor": "Run",
+    "TestNG.BookingTests.addBooking.executor": "Run",
+    "TestNG.BookingTests.addBookingWithInvalidData (1).executor": "Run",
+    "TestNG.BookingTests.addBookingWithInvalidData.executor": "Run",
+    "TestNG.BookingTests.addBookingWithoutLastname.executor": "Run",
+    "TestNG.BookingTests.executor": "Run",
     "TestNG.postApi (1).executor": "Run",
     "TestNG.postApi.executor": "Run",
     "TestNG.postApi.testCreateObject.executor": "Run",
@@ -69,43 +80,8 @@
       <recent name="C:\Users\Admin\IdeaProjects\AmazonAssignment\src\test" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.postApi">
-    <configuration name="Scenario: Search for toys, add to cart, and validate prices" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/amazonWebsite.feature" />
-      <option name="GLUE" value="stepDefinition" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="AmazonAssignment" />
-      <option name="NAME_FILTER" value="^Search for toys\, add to cart\, and validate prices$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Search for toys\, add to cart\, and validate prices$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Search for toys, add to cart, and validate prices" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AmazonAssignment" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Runners.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Runners" />
-      <option name="MAIN_CLASS_NAME" value="Runners.TestRunner" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="postApi (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.BookingTests.addBooking">
+    <configuration name="BookingTests (3)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AmazonAssignment" />
       <extension name="coverage">
         <pattern>
@@ -114,7 +90,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Task2Api" />
-      <option name="MAIN_CLASS_NAME" value="Task2Api.postApi" />
+      <option name="MAIN_CLASS_NAME" value="Task2Api.BookingTests" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -122,7 +98,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="postApi" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="BookingTests.addBooking" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AmazonAssignment" />
       <extension name="coverage">
         <pattern>
@@ -131,15 +107,16 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Task2Api" />
-      <option name="MAIN_CLASS_NAME" value="Task2Api.postApi" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="MAIN_CLASS_NAME" value="Task2Api.BookingTests" />
+      <option name="METHOD_NAME" value="addBooking" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="postApi.testCreateObject" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="BookingTests.addBookingWithInvalidData (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AmazonAssignment" />
       <extension name="coverage">
         <pattern>
@@ -148,8 +125,44 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Task2Api" />
-      <option name="MAIN_CLASS_NAME" value="Task2Api.postApi" />
-      <option name="METHOD_NAME" value="testCreateObject" />
+      <option name="MAIN_CLASS_NAME" value="Task2Api.BookingTests" />
+      <option name="METHOD_NAME" value="addBookingWithInvalidData" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookingTests.addBookingWithInvalidData" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AmazonAssignment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Task2Api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Task2Api" />
+      <option name="MAIN_CLASS_NAME" value="Task2Api.BookingTests" />
+      <option name="METHOD_NAME" value="addBookingWithInvalidData" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookingTests.addBookingWithoutLastname" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AmazonAssignment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Task2Api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Task2Api" />
+      <option name="MAIN_CLASS_NAME" value="Task2Api.BookingTests" />
+      <option name="METHOD_NAME" value="addBookingWithoutLastname" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -159,11 +172,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.postApi" />
-        <item itemvalue="TestNG.postApi.testCreateObject" />
-        <item itemvalue="TestNG.postApi (1)" />
-        <item itemvalue="Cucumber Java.Scenario: Search for toys, add to cart, and validate prices" />
-        <item itemvalue="JUnit.TestRunner" />
+        <item itemvalue="TestNG.BookingTests.addBooking" />
+        <item itemvalue="TestNG.BookingTests.addBookingWithoutLastname" />
+        <item itemvalue="TestNG.BookingTests.addBookingWithInvalidData (1)" />
+        <item itemvalue="TestNG.BookingTests.addBookingWithInvalidData" />
+        <item itemvalue="TestNG.BookingTests (3)" />
       </list>
     </recent_temporary>
   </component>

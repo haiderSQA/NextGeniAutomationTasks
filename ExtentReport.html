@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary"></span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Sep 22, 2024 07:39:45 AM</span></a>
+<a href="#"><span class="badge badge-primary">Sep 26, 2024 12:11:38 PM</span></a>
 </li>
 </ul>
 </div>
@@ -79,9 +79,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">API Test for Create Object</p>
+            <p class="name">BookingTest</p>
             <p class="text-sm">
-              <span>7:39:46 AM</span> / <span>00:00:08:433</span>
+              <span>12:11:38 PM</span> / <span>00:00:00:312</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -89,10 +89,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">API Test for Create Object</h5>
-<span class='badge badge-success'>09.22.2024 7:39:46 AM</span>
-<span class='badge badge-danger'>09.22.2024 7:39:54 AM</span>
-<span class='badge badge-default'>00:00:08:433</span>
+<h5 class="test-status text-pass">BookingTest</h5>
+<span class='badge badge-success'>09.26.2024 12:11:38 PM</span>
+<span class='badge badge-danger'>09.26.2024 12:11:39 PM</span>
+<span class='badge badge-default'>00:00:00:312</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -105,30 +105,255 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>7:39:54 AM</td>
+        <td>12:11:39 PM</td>
         <td>
-          Response Status Code: 200
+          Setting up the test environment.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="2"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Add Booking Test</p>
+            <p class="text-sm">
+              <span>12:11:39 PM</span> / <span>00:00:03:825</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Add Booking Test</h5>
+<span class='badge badge-success'>09.26.2024 12:11:39 PM</span>
+<span class='badge badge-danger'>09.26.2024 12:11:42 PM</span>
+<span class='badge badge-default'>00:00:03:825</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:11:39 PM</td>
+        <td>
+          Sending POST request to create a new booking.
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>7:39:54 AM</td>
+        <td>12:11:39 PM</td>
         <td>
-          Response Body: {"id":"ff808181921a230701921a2cc2260023","name":"Apple Max Pro 2TB","createdAt":"2024-09-22T14:39:54.211+00:00","data":{"year":2023,"price":7999.99,"CPU model":"Apple ARM A7","Hard disk size":"1 TB"}}
+          Request Body: {
+    "firstname": "Haider",
+    "lastname": "Hasnain",
+    "totalprice": 35000,
+    "depositpaid": true,
+    "bookingdates": {
+        "checkin": "2022-01-01",
+        "checkout": "2024-01-01"
+    },
+    "additionalneeds": "testAdd"
+}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:11:41 PM</td>
+        <td>
+          Received response from POST /booking.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:11:41 PM</td>
+        <td>
+          Response: {"bookingid":359,"booking":{"firstname":"Haider","lastname":"Hasnain","totalprice":35000,"depositpaid":true,"bookingdates":{"checkin":"2022-01-01","checkout":"2024-01-01"},"additionalneeds":"testAdd"}}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:11:41 PM</td>
+        <td>
+          Created booking ID: 359
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:11:41 PM</td>
+        <td>
+          Validating the booking details for booking ID: 359
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:11:42 PM</td>
+        <td>
+          Received response from GET /booking/359
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:11:42 PM</td>
+        <td>
+          Response: {"firstname":"Haider","lastname":"Hasnain","totalprice":35000,"depositpaid":true,"bookingdates":{"checkin":"2022-01-01","checkout":"2024-01-01"},"additionalneeds":"testAdd"}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:11:42 PM</td>
+        <td>
+          Validating the 'firstname' field.
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>7:39:54 AM</td>
+        <td>12:11:42 PM</td>
         <td>
-          Status code validation passed
+          Validation passed for 'firstname'.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:11:42 PM</td>
+        <td>
+          Validating the 'lastname' field.
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>7:39:54 AM</td>
+        <td>12:11:42 PM</td>
         <td>
-          Validation of response body completed successfully
+          Validation passed for 'lastname'.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:11:42 PM</td>
+        <td>
+          Validating the 'totalprice' field.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:11:42 PM</td>
+        <td>
+          Validation passed for 'totalprice'.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:11:42 PM</td>
+        <td>
+          Validating the 'depositpaid' field.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:11:42 PM</td>
+        <td>
+          Validation passed for 'depositpaid'.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:11:42 PM</td>
+        <td>
+          Validating the 'checkin' field.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:11:42 PM</td>
+        <td>
+          Validation passed for 'checkin'.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:11:42 PM</td>
+        <td>
+          Validating the 'checkout' field.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:11:42 PM</td>
+        <td>
+          Validation passed for 'checkout'.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:11:42 PM</td>
+        <td>
+          Validating the 'additionalneeds' field.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:11:42 PM</td>
+        <td>
+          Validation passed for 'additionalneeds'.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:11:42 PM</td>
+        <td>
+          Booking validated successfully.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="3"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Add Booking with out last name</p>
+            <p class="text-sm">
+              <span>12:11:42 PM</span> / <span>00:00:01:024</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Add Booking with out last name</h5>
+<span class='badge badge-success'>09.26.2024 12:11:42 PM</span>
+<span class='badge badge-danger'>09.26.2024 12:11:43 PM</span>
+<span class='badge badge-default'>00:00:01:024</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:11:43 PM</td>
+        <td>
+          Handled invalid data correctly.
         </td>
       </tr>
   </tbody>
@@ -150,19 +375,19 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Sep 22, 2024 07:39:45 AM</h3>
+<h3>Sep 26, 2024 12:11:38 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Sep 22, 2024 07:39:54 AM</h3>
+<h3>Sep 26, 2024 12:11:43 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>1</h3>
+<h3>3</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -185,7 +410,7 @@
 </div>
 <div class="card-footer">
 <div><small data-tooltip='100%'>
-<b>1</b> tests passed
+<b>3</b> tests passed
 </small>
 </div>
 <div>
@@ -207,10 +432,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='50%'><b>2</b> events passed</small></div>
+<div><small data-tooltip='36%'><b>9</b> events passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> events failed,
-<b data-tooltip='%'>2</b> others
+<b data-tooltip='%'>16</b> others
 </small>
 </div>
 </div>
@@ -226,7 +451,7 @@
 </div></div>
 <script>
 var timeline = {
-"API Test for Create Object":8.433
+"BookingTest":0.312,"Add Booking Test":3.825,"Add Booking with out last name":1.024
 };
 </script>
 <div class="row">
@@ -235,7 +460,7 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 1,
+passParent: 3,
 failParent: 0,
 warningParent: 0,
 skipParent: 0,
@@ -252,11 +477,11 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 2,
+passEvents: 9,
 failEvents: 0,
 warningEvents: 0,
 skipEvents: 0,
-infoEvents: 2
+infoEvents: 16
 };
 </script>        </div>
       </div>
